@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dom intro...!</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h5 id="demo1"></h5>
+    <h4 id="Demo"></h4>
+    <input type="text" value = "An input field">
+    <button onclick="myFunction()">A Button</button>
+    <h1 id="Element"></h1>
+
+    <p>Click any where in the document to disply "Hello JavaScript!"</p>
+    <h2 id="demo2"></h2>
+
+    <a name="" >HTML</a>
+    <a name="" >CSS</a>
+    <a name="" >JavaScript</a>
+
+    <h1 id="demo3"></h1>
+    <h3 id="demo4"></h3>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript..!";
+        let url = window.document.URL;
+        document.getElementById("demo1").innerHTML = url;
+
+        let urls = document.URL;
+        document.getElementById("Demo").innerHTML = url;
+
+        //The activeElement Property..
+        function myFunction(){
+            const element = document.activeElement.tagName;
+            document.getElementById("Element").innerHTML = element;
+        }
+
+        //the addEvenListener..
+        function addEvelistenerFunction(){
+            document.getElementById("demo2").innerHTML = "Hello JavaScript.!";
+        }
+        document.addEventListener("click", addEvelistenerFunction);
+
+        //anchors
+        let num = document.getElementsByTagName("a").length;
+        document.getElementById("demo3").innerHTML = num;
+    
+        //the baseULI
+        let base = document.baseURI;
+        document.getElementById("demo4").innerHTML = base;
+    </script>
+</body>
+</html>
