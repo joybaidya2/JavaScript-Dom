@@ -4,20 +4,27 @@
   <title>Simple compareDocumentPosition</title>
 </head>
 <style>
-  .myColor:focus{
-    color: red;
+  #myDiv{
+    height: 200px;
+    width: 250px;
+    background-color: orange;
+    padding: 10px;
+    overflow: auto;
+  }
+  #content{
+    height: 800px;
+    width: 2000px;
   }
 </style>
 <body>
-  <h1>The Element Object</h1>
-  <h2>The insertBefo() Method</h2>
-  <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-  </ul>
+  <h1>The Element Object.!</h1>
+  <h2>The title Property.</h2>
 
+  <p><abbr id="myTitale" title="Yeah.I love you so much">Joy do you love me?</abbr> I am watting for your answer.</p>
+  <h3 id="demo"></h3>
   <script>
-    
+    const Element = document.getElementById("myTitale");
+    document.getElementById("demo").innerHTML = Element.title;
   </script>
 </body>
 </html>
