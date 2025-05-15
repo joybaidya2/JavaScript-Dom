@@ -4,27 +4,16 @@
   <title>Simple compareDocumentPosition</title>
 </head>
 <style>
-  #myDiv{
-    height: 200px;
-    width: 250px;
-    background-color: orange;
-    padding: 10px;
-    overflow: auto;
-  }
-  #content{
-    height: 800px;
-    width: 2000px;
-  }
+  
 </style>
 <body>
-  <h1>The Element Object.!</h1>
-  <h2>The title Property.</h2>
-
-  <p><abbr id="myTitale" title="Yeah.I love you so much">Joy do you love me?</abbr> I am watting for your answer.</p>
-  <h3 id="demo"></h3>
+  <h1>HTML Style Object..</h1>
+  <h2>The background Property</h2>
+  <button onclick="myFunction()">Set background</button>
   <script>
-    const Element = document.getElementById("myTitale");
-    document.getElementById("demo").innerHTML = Element.title;
+    function myFunction(){
+      document.body.style.background = "#f3f3f3 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DLbOVoHDY-GAXJ6SNE5liOqpdryiGfT_yexIQ5LW-G4kXoiFcoX4Vkwo8KKY3TyKpPg&usqp=CAU') no-repeat right top"
+    }
   </script>
 </body>
 </html>
