@@ -4,33 +4,17 @@
   <title>Simple compareDocumentPosition</title>
 </head>
 <style>
-  div{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    color: white;
-    animation: mymove 2s infinite linear alternate;
-  }
-  @keyframes mymove {
-    to {transform: rotatey(180deg);}
-  }
+ 
 </style>
 <body>
-  <h1>HTML Style Object..</h1>
-  <h2>The background Property</h2>
- 
-  <input type="checkbox" onclick="myFunction(this)" checked>Backface-visibility
-  <div id="myDiv">
-    <h1>Hello</h1>
-  </div>
-  <script>
-    function myFunction(x){
-      if(x.checked === true){
-        document.getElementById("myDiv").style.backfaceVisibility = "visible";
-      }else{
-        document.getElementById("myDiv").style.backfaceVisibility = "hidden";
-      }
-    }
-  </script>
+ <div id="Div">
+  <p>Hello Joy..</p>
+ </div>
+ <button onclick="myFunction()">Set Border</button>
+ <script>
+  function myFunction(){
+    document.getElementById("Div").style.border = "thick Solid  red";
+  }
+ </script>
 </body>
 </html>
